@@ -24,7 +24,7 @@ module Dumper
         return unless defined?(ActiveRecord::Base) &&
           ActiveRecord::Base.configurations &&
           (config = ActiveRecord::Base.configurations[rails_env]) &&
-          (config['adapter'] == 'postgresql')
+          (config[:adapter] == 'postgresql')
 
         @config = {
           :host => config['host'],
