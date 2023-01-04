@@ -27,11 +27,11 @@ module Dumper
           (config[:adapter] == 'postgresql')
 
         @config = {
-          :host => config['host'],
-          :port => config['port'],
-          :username => config['username'],
-          :password => config['password'],
-          :database => config['database'],
+          :host => config[:host],
+          :port => config[:port],
+          :username => config[:username],
+          :password => config[:password],
+          :database => config[:database],
           :dump_tool => dump_tool_path
         }
       end
